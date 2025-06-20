@@ -75,13 +75,29 @@ $gato -> castrado = 'sim';
 $gato -> independente = 'não é independente';
 $gato -> vacinado = 'sim'; 
 $gato -> curioso = 'é curiosa';
-$gato -> adoraColo = 'sim';
+$gato -> adoraColo = 'Aceita';
 $gato -> usaCaixaAreia = 'sim';
+$gato -> status = 'Adotada';
 
 echo "<br>";
 echo $gato->exibirGato();
 echo "<br><br>";
 echo $gato->castrar() ? "Castrado":"Não castrado";
+echo "<br><br>";
+echo $gato->verificarPelagem();
+echo "<br><br>";
+echo $gato->atualizarIndependencia("Um pouco independente");
+echo "<br><br>";
+echo $gato->vacinar() ? "vacinado":"não vacinado";
+echo "<br><br>";
+echo $gato->resumoGato();
+echo "<br><br>";
+echo $gato->ensinarCaixaAreia() ? "Usa caixa de areia":"Não usa caixa de areia";
+echo "<br><br>";
+echo $gato->verificarContato();
+echo "<br><br>";
+
+echo "<hr>";
 
 $adotante = new adotante();
 
@@ -90,10 +106,22 @@ $adotante -> idade = '17';
 $adotante -> telefone = '51991572758';
 $adotante -> email = 'joanncsenac@gmail.com';
 $adotante -> endereco = 'Av. Ganzo, 745';
-$adotante -> temOutrosAnimais = 'Sim';
-$adotante -> experienciaComPets = 'Sim';
+$adotante -> temOutrosAnimais = 'Possui outros animais';
+$adotante -> experienciaComPets = 'Possui experiência';
 $adotante -> tipoAnimal = 'Cachorro';
 
-
+echo "<br>";
+echo $adotante->exibirAdotante();
+echo "<br><br>";
+echo $adotante->adotarAnimal("Cachorro");
+echo "<br><br>";
+echo $adotante->verificarIdade();
+echo "<br><br>";
+echo $adotante->temExperiencia();
+echo "<br><br>";
+echo $adotante->listarcontato();
+echo "<br><br>";
+echo $adotante->verificarOutrosAnimais();
+echo "<br><br>";
 
 

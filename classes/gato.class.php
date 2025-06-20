@@ -10,6 +10,7 @@ class gato{
     public $curioso;
     public $adoraColo;
     public $usaCaixaAreia;
+    public $status;
 
     public function exibirGato(): string {
         return "Atributos do gato:<br>
@@ -31,27 +32,38 @@ class gato{
     }
   
     public function verificarPelagem(): string {
+        return "A pelagem do gato é {$this->pelagem}";
 
     }
 
-    public function atualizarIndependencia(): string {
+    public function atualizarIndependencia($independente): string {
+        $this->independente = $independente;
+        return "Grau de independência atualizado para {$this->independente}";
 
     }
 
     public function vacinar(): string {
+        $this->vacinado = true;
+        return $this->vacinado;
 
     }
 
     public function resumoGato(): string {
+        return "O nome do gato é {$this->nome}, <br>
+        sua pelagem é {$this->pelagem} <br>
+        e está {$this->status}";
 
     }
 
     public function ensinarCaixaAreia(): string {
+        $this->usaCaixaAreia = true;
+        return $this->usaCaixaAreia;
 
     }
 
     public function verificarContato(): string {
-
+        return "O gato {$this->adoraColo} Colo";
+   
     }
 
 }
