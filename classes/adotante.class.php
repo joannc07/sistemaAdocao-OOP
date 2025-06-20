@@ -63,6 +63,8 @@ class adotante{
     }
 
     public function resumoAdotante(): string {
+        return "O nome do adotante é {$this->nome} <br>
+        e não possui nenhum animal associado";
 
     }
 }
