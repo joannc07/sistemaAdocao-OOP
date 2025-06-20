@@ -12,10 +12,20 @@ class cachorro{
     public $adestrado;
 
     public function exibirCachorro(): string {
+        return "Atributos do cachorro:<br>
+        Nome: {$this->nome}<br>
+        Raça: {$this->raca}<br>
+        Porte: {$this->porte}<br>
+        Nível de energia: {$this->nivelEnergia}<br>
+        Vacinação: {$this->vacinado}<br>
+        Vermifugação: {$this->vermifugado}<br>
+        Sociabilidade: {$this->sociavel}<br>
+        Adestramento: {$this->adestrado}<br>";
 
     }
 
     public function vacinar(): string {
+        return "O animal "
 
     }
 

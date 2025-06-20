@@ -15,14 +15,24 @@ $animal -> cor = 'Branco, azul e verde';
 $animal -> status = 'adotado';
 $animal -> chipado = 'não';
 
-echo $animal->exibirFicha()."<br>";
-echo $animal ->atualizarPeso(500)."<br>";
-echo $animal ->alterarStatus('Disponivel')."<br>";
-echo $animal ->verificarIdade()."<br>";
-echo $animal ->marcarComoChipado()."<br>";
-echo $animal ->desmarcarChipado()."<br>";
-echo $animal ->resumoAnimal()."<br>";
-echo $animal ->verificarSexo()."<br>";
+echo $animal->exibirFicha();
+echo"<br><br>";
+echo $animal->atualizarPeso(500);
+echo "<br><br>";
+echo $animal->alterarStatus('Disponivel');
+echo "<br><br>";
+echo $animal->verificarIdade();
+echo "<br><br>";
+echo $animal->marcarComoChipado() ? "chipado":"não chipado";
+echo "<br><br>";
+echo $animal->desmarcarChipado() ? "chipado":"não chipado";
+echo"<br><br>";
+echo $animal->resumoAnimal();
+echo"<br><br>";
+echo $animal->verificarSexo();
+echo"<br><br>";
+
+echo"<hr>";
 
 $cachorro = new cachorro();
 
@@ -34,6 +44,11 @@ $cachorro -> vacinado = 'não';
 $cachorro -> vermifugado = 'não';
 $cachorro -> sociavel = 'sim';
 $cachorro -> adestrado = 'sim';
+
+echo "<br>";
+echo $cachorro->exibirCachorro();
+echo $cachorro->vacinar();
+
 
 $gato = new gato();
 
