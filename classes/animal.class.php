@@ -38,7 +38,7 @@ class animal{
     }
 
     public function marcarComoChipado(): string {
-        
+        $this->chipado = true;
 
     }
 
