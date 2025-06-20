@@ -57,6 +57,8 @@ class adotante{
     }
 
     public function cancelarAdocao(): string {
+        $this->tipoAnimal = false;
+        return $this->tipoAnimal; 
 
     }
 

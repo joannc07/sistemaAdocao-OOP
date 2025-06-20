@@ -123,5 +123,7 @@ echo $adotante->listarcontato();
 echo "<br><br>";
 echo $adotante->verificarOutrosAnimais();
 echo "<br><br>";
-
+echo $adotante->cancelarAdocao()  ? "O cachorro foi adotado" : "A adoção não irá prosseguir";
+echo "<br><br>";
+echo $adotante->
 
