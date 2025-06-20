@@ -3,6 +3,7 @@
 include_once './classes/animal.class.php';
 include_once './classes/adotante.class.php';
 include_once './classes/cachorro.class.php';
+include_once './classes/gato.class.php';
 
 $animal = new animal();
 
@@ -40,17 +41,30 @@ $cachorro -> nome = 'Saci';
 $cachorro -> raca = 'Vira-lata';
 $cachorro -> porte = 'médio';
 $cachorro -> nivelEnergia = '9';
-$cachorro -> vacinado = 'não está vacinado';
+$cachorro -> vacinado = 'está vacinado';
 $cachorro -> vermifugado = 'não';
-$cachorro -> sociavel = 'sim';
+$cachorro -> sociavel = 'é sociável';
 $cachorro -> adestrado = 'está adestrado';
 
 echo "<br>";
 echo $cachorro->exibirCachorro();
 echo "<br><br>";
-echo $cachorro->vacinar();
+echo $cachorro->vacinar() ? "vacinado":"não vacinado";
 echo "<br><br>";
 echo $cachorro->verificarAdestramento();
+echo "<br><br>";
+echo $cachorro->atualizarNivelEnergia(10);
+echo "<br><br>";
+echo $cachorro->indicarPorte();
+echo "<br><br>";
+echo $cachorro->socializar() ? "sociável":"não sociável";
+echo "<br><br>";
+echo $cachorro->iniciarAdestramento() ? "adestrado":"não adestrado";
+echo "<br><br>";
+echo $cachorro->resumoCachorro();
+echo "<br><br>";
+
+echo "<hr>";
 
 
 $gato = new gato();
@@ -58,11 +72,16 @@ $gato = new gato();
 $gato -> nome = 'Corinha';
 $gato -> pelagem = 'curta';
 $gato -> castrado = 'sim';
-$gato -> independente = 'não';
+$gato -> independente = 'não é independente';
 $gato -> vacinado = 'sim'; 
-$gato -> curioso = 'sim';
+$gato -> curioso = 'é curiosa';
 $gato -> adoraColo = 'sim';
 $gato -> usaCaixaAreia = 'sim';
+
+echo "<br>";
+echo $gato->exibirGato();
+echo "<br><br>";
+echo $gato->castrar() ? "Castrado":"Não castrado";
 
 $adotante = new adotante();
 

@@ -25,7 +25,8 @@ class cachorro{
     }
 
     public function vacinar(): string {
-        return "O animal {$this->vacinado}";
+        $this->vacinado = true;
+        return $this->vacinado;
 
     }
 
@@ -34,23 +35,33 @@ class cachorro{
 
     }
 
-    public function atualizarNivelEnergia(): string {
+    public function atualizarNivelEnergia($nivelEnergia): string {
+        $this->nivelEnergia = $nivelEnergia;
+        return "Nivel de energia atualizado para {$this->nivelEnergia}";
 
     }
 
     public function indicarPorte(): string {
+        return "O porte do cachorro é {$this->porte}";
 
     }
 
     public function socializar(): string {
+        $this->sociavel = true;
+        return $this->sociavel;
 
     }
 
     public function iniciarAdestramento(): string {
+        $this->adestrado = true;
+        return $this->adestrado;
 
     }
 
     public function resumoCachorro(): string {
+        return "O nome do cachorro é {$this->nome}<br>
+        sua raça é {$this->raca}<br>
+        e seu porte é {$this->porte}";
 
     }
 }
