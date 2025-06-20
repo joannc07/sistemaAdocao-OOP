@@ -20,16 +20,17 @@ class cachorro{
         Vacinação: {$this->vacinado}<br>
         Vermifugação: {$this->vermifugado}<br>
         Sociabilidade: {$this->sociavel}<br>
-        Adestramento: {$this->adestrado}<br>";
+        Adestramento: {$this->adestrado}";
 
     }
 
     public function vacinar(): string {
-        return "O animal "
+        return "O animal {$this->vacinado}";
 
     }
 
     public function verificarAdestramento(): string {
+        return "O animal {$this->adestrado}";
 
     }
 

@@ -40,14 +40,17 @@ $cachorro -> nome = 'Saci';
 $cachorro -> raca = 'Vira-lata';
 $cachorro -> porte = 'médio';
 $cachorro -> nivelEnergia = '9';
-$cachorro -> vacinado = 'não';
+$cachorro -> vacinado = 'não está vacinado';
 $cachorro -> vermifugado = 'não';
 $cachorro -> sociavel = 'sim';
-$cachorro -> adestrado = 'sim';
+$cachorro -> adestrado = 'está adestrado';
 
 echo "<br>";
 echo $cachorro->exibirCachorro();
+echo "<br><br>";
 echo $cachorro->vacinar();
+echo "<br><br>";
+echo $cachorro->verificarAdestramento();
 
 
 $gato = new gato();
