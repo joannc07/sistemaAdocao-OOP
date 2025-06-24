@@ -5,6 +5,7 @@ include_once './classes/adotante.class.php';
 include_once './classes/cachorro.class.php';
 include_once './classes/gato.class.php';
 
+
 $animal = new animal();
 
 $animal -> nome = 'Tadeuzinho';
