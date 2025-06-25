@@ -1,16 +1,16 @@
 <?php
+include_once 'cachorro.class.php';
 
-class gato{
+class gato extends cachorro{
 
-    public $nome;
+    //herdei os atributos "nome", "status" e "vacinacado", além do método "vacinar()".
     public $pelagem;
     public $castrado;
     public $independente;
-    public $vacinado;
     public $curioso;
     public $adoraColo;
     public $usaCaixaAreia;
-    public $status;
+
 
     public function exibirGato(): string {
         return "Atributos do gato:<br>
@@ -42,11 +42,6 @@ class gato{
 
     }
 
-    public function vacinar(): string {
-        $this->vacinado = true;
-        return $this->vacinado;
-
-    }
 
     public function resumoGato(): string {
         return "O nome do gato é {$this->nome}, <br>

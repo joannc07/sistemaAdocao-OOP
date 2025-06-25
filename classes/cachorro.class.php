@@ -1,8 +1,9 @@
 <?php
+include_once 'animal.class.php';
 
-class cachorro{
+class cachorro extends animal{
 
-    public $nome;
+    //herdei o atributo nome do animal ao cachorro.
     public $raca;
     public $porte;
     public $nivelEnergia;
