@@ -68,17 +68,23 @@ echo "<br><br>";
 echo "<hr>";
 
 
-$gato = new gato();
-
-$gato -> nome = 'Corinha';
-$gato -> pelagem = 'curta';
-$gato -> castrado = 'sim';
-$gato -> independente = 'não é independente';
-$gato -> vacinado = 'sim'; 
-$gato -> curioso = 'é curiosa';
-$gato -> adoraColo = 'Aceita';
-$gato -> usaCaixaAreia = 'sim';
-$gato -> status = 'Adotada';
+$gato = new Gato(
+    nome: 'Corinha',
+    idade: 2,
+    sexo: 'fêmea',
+    peso: 3.5,
+    cor: 'cinza',
+    pelagem: 'curta',
+    vacinado: 'vacinado',
+    independente: 'dependente',
+    chipado: 'não',
+    especie: 'felino',
+    status: 'adotada',
+    castrado: 'castrado',
+    curioso: 'curioso',
+    adoraColo: 'adora',
+    usaCaixaAreia: 'usa caixa'
+);
 
 echo "<br>";
 echo $gato->exibirGato();

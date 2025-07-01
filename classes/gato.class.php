@@ -11,7 +11,30 @@ class gato extends cachorro{
     public $adoraColo;
     public $usaCaixaAreia;
 
+    public function __construct($nome, $idade, $sexo, $peso, $cor, $pelagem,
+    $vacinado, $independente, $chipado, $especie, $status,
+    $castrado = false, $curioso = false, $adoraColo = false, $usaCaixaAreia = false) {
 
+    $this->nome = $nome;
+    $this->especie = $especie;
+    $this->idade = $idade;
+    $this->sexo = $sexo;
+    $this->peso = $peso;
+    $this->cor = $cor;
+    $this->status = $status;
+    $this->chipado = $chipado;
+    $this->pelagem = $pelagem;
+    $this->castrado = $castrado;
+    $this->independente = $independente;
+    $this->vacinado = $vacinado;
+    $this->curioso = $curioso;
+    $this->adoraColo = $adoraColo;
+    $this->usaCaixaAreia = $usaCaixaAreia;
+}
+
+
+    
+    
     public function exibirGato(): string {
         return "Atributos do gato:<br>
         Nome: {$this->nome} <br>
